@@ -1,0 +1,79 @@
+html{
+    background-color: #FCF9EA;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 10px;
+    background-color: #FCF9EA;
+}
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 10px;
+    width: 100%;
+}
+#a1:hover{
+    background-color: #f8a978;
+}
+#a2:hover{
+    background-color: #f8a978;
+}
+#a3:hover{
+    background-color: #f8a978;
+}
+#a4:hover{
+    background-color: #f8a978;
+}
+#a5:hover{
+    background-color: #f8a978;
+}
+nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 0px;
+    text-align: center;
+    background: #ffc5a1;
+}
+nav a {
+    padding: .75rem 0 .75rem 0;
+    font-size: 24px;
+    border: 2px solid #f8a978;
+    
+} 
+a {
+    color: black;
+    text-decoration: none;
+}
+img{
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+p{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+h3{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+div{
+    text-align: center;
+    background-color: #BADFDB;
+}
+@media screen and (max-width: 900px){
+    .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 520px){
+    .wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /*
+        right here is where we would add the hamburger icon instead
+    */
+}

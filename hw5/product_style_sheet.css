@@ -1,0 +1,150 @@
+html{
+    background-color: #FCF9EA;
+}
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+#gameTitle{
+    color: #f8a978;
+}
+h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+#container{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #BADFDB;
+    text-align: center;
+    position: relative;
+}
+#images{
+    float: left;
+    padding: 10px
+}
+#details{
+    width: 50%;
+    text-align: center;
+    margin: 0;
+    
+}
+
+#mainDisplay{
+    width: 110%;
+    height: auto;
+    text-align: center;
+    max-width: 460px;
+    max-height: 200px;
+    margin-right: 10px;
+    position: inherit;
+}
+.imagePicker{
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+}
+#mainProduct{
+    position: relative;
+    padding-inline-start: 0px;
+    width: fit-content;
+    justify-content: space-between;
+}
+.imagePicker li{
+    float: left;
+    position: center;
+    padding: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.imagePicker li img{
+    width: 100px;
+    height: auto;
+}
+.relatedImages{
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+}
+.relatedImages li img{
+    width: 80px;
+    height: auto;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#userReviews{
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+#container2{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #f8a978;
+    text-align: center;
+}
+.userReviews{
+    list-style-type: none;
+    padding: 3px;
+}
+.userReviews li{
+    padding: 3px;
+    margin: 10px 3px 3px 3px;
+    background-color: #ffc5a1;
+}
+#similarProducts{
+    position: relative;
+    padding-inline-start: 0px;
+    width: fit-content;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.relatedImages li img{
+    width: 70%;
+    height: auto;
+}
+.checked {
+    color: orange;
+}
+#description{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+@media screen and (max-width: 1000px){
+    #container{
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: auto;
+    }
+    #container2{
+        width: 90%;
+        height: auto;
+    }
+    #images{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        float: inherit;
+    }
+    #details{
+        text-align: center;
+        width: 100%;
+    }
+    #mainDisplay{
+        width: 100%;
+        height: auto;
+    }
+}

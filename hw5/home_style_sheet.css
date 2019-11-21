@@ -1,0 +1,131 @@
+html{
+  background-color: #FCF9EA;
+}
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: #f8a978;
+    padding: 10px 5px;
+  }
+  .images{
+    background-color: #BADFDB;
+    margin: 4%;
+  }
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  #featured{
+    font-size: 3em;
+    color: #f8a978;
+  }
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #BADFDB;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    
+    background-color: #ffc5a1;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    justify-content: space-between;
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+  
+  #container{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #BADFDB;
+    text-align: center;
+    position: relative;
+}
+
+#mainDisplay{
+    width: 90%;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 3%;
+    display: block;
+    position: inherit;
+}
+.imagePicker{
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+}
+#mainProduct{
+    position: relative;
+    padding-inline-start: 0px;
+    width: fit-content;
+    justify-content: space-between;
+}
+.imagePicker li{
+    position: center;
+    padding: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.imagePicker li img{
+    width: 100px;
+    height: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+@media screen and (max-width: 500px){
+  #container{
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      height: auto;
+  }
+
+  #images{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      float: inherit;
+  }
+  .mainProduct li{
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+  }
+}
